@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "pr7_trpo_1_KMA/1.0.0": {
+        "runtime": {
+          "pr7_trpo_1_KMA.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "pr7_trpo_1_KMA/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
