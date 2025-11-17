@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\App.xaml
-11407045341
+72056941865
 
-42038749888
+10-2140603026
 198-556154604
-MainWindow.xaml;
+MainWindow.xaml;Pages\PageAppointment.xaml;Pages\PageChange.xaml;Pages\PageCreatePacient.xaml;Pages\PageDoctor.xaml;Pages\PageEnter.xaml;Pages\Registration.xaml;
 
 False
 

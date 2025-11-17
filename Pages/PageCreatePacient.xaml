@@ -1,0 +1,35 @@
+﻿<Page x:Class="pr7_trpo_1_KMA.Pages.PageCreatePacient"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:pr7_trpo_1_KMA.Pages"
+      mc:Ignorable="d" 
+      WindowHeight="340" WindowWidth="520"
+      Height="260" Width="500"
+      Title="Создание пациента">
+    <Grid Background="WhiteSmoke">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="0" Content="Назад" Click="BackClick"/>
+        <StackPanel Grid.Column="0" Grid.Row="1">
+            <Label Content="Фамилия"/>
+            <Label Content="Имя"/>
+            <Label Content="Отчество"/>
+            <Label Content="Дата рождения"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <TextBox Text="{Binding NameP, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Text="{Binding LastNameP, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Text="{Binding MiddleNameP, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
+            <DatePicker SelectedDate="{Binding BirthDay, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+        <Button Grid.Row="1" Content="Зарегистрировать" Grid.ColumnSpan="2" Click="CreateClick"/>
+    </Grid>
+</Page>

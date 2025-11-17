@@ -1,0 +1,78 @@
+﻿<Page x:Class="pr7_trpo_1_KMA.Pages.PageAppointment"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:pr7_trpo_1_KMA.Pages"
+      mc:Ignorable="d" 
+      WindowHeight="420" WindowWidth="675"
+      Height="350" Width="655"
+      Title="Прием" Background="WhiteSmoke">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Margin="10 10 0 10" Background="#FFECECEC">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Данные" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <StackPanel Grid.Column="0" Margin="0 25 0 0">
+                <Label Content="Фамилия" VerticalAlignment="Center"/>
+                <Label Content="Имя" VerticalAlignment="Center"/>
+                <Label Content="Отчество" VerticalAlignment="Center"/>
+                <Label Content="Дата рождения" VerticalAlignment="Center"/>
+                <Label Content="Диагноз" VerticalAlignment="Center"/>
+                <Label Content="Рекомендации" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Margin="0 25 5 0">
+                <StackPanel x:Name="pacientInfo">
+                    <Label Content="{Binding NameP, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                    <Label Content="{Binding LastNameP, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                    <Label Content="{Binding MiddleNameP, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                    <Label Content="{Binding BirthDay, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                </StackPanel>
+                <StackPanel x:Name="docPac">
+                    <TextBox Text="{Binding Diagnosis}" Margin="4" VerticalAlignment="Center"/>
+                    <TextBox Text="{Binding Recomendations}" Margin="4" VerticalAlignment="Center"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.ColumnSpan="2" VerticalAlignment="Bottom">
+                <Button Content="Сохранить" Margin="4" Click="ButtonSave" VerticalAlignment="Bottom"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1" Margin="10 10 10 10" Background="#FFECECEC">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="История приёмов" Grid.Row="0" HorizontalAlignment="Center"/>
+            <ListView Grid.Row="2" Margin="4"
+                  ItemsSource="{Binding Apps}"
+                  SelectedItem="{Binding SelectedAppointment}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Дата: "/>
+                                <TextBlock Text="{Binding Date}"/>
+                                <TextBlock Text=" Доктор: "/>
+                                <TextBlock Text="{Binding DocId}"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Диагноз: "/>
+                                <TextBlock Text="{Binding Diagnosis}"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Рекомендации: "/>
+                                <TextBlock Text="{Binding Recomendations}"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </Grid>
+</Page>

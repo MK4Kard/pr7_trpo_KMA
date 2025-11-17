@@ -7,7 +7,42 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Pages\PageAppointment.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\PageChange.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\PageCreatePacient.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\PageDoctor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\PageEnter.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Registration.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PageAppointment.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PageChange.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PageCreatePacient.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PageDoctor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PageEnter.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

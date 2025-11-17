@@ -1,0 +1,35 @@
+﻿<Page x:Class="pr7_trpo_1_KMA.Pages.Registration"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:pr7_trpo_1_KMA.Pages"
+      mc:Ignorable="d"
+      WindowHeight="255" WindowWidth="320"
+      Height="185" Width="300"
+      Title="Registration">
+    <Grid Background="#FFECECEC">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Label Content="Фамилия"/>
+            <Label Content="Имя"/>
+            <Label Content="Отчество"/>
+            <Label Content="Специальность"/>
+            <Label Content="Пароль"/>
+            <Label Content="Повторите пароль"/>
+            <Label Content="id "/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBox Text="{Binding Name, Mode=OneWayToSource}"/>
+            <TextBox Text="{Binding LastName, Mode=OneWayToSource}"/>
+            <TextBox Text="{Binding MiddleName, Mode=OneWayToSource}"/>
+            <TextBox Text="{Binding Specialisation, Mode=OneWayToSource}"/>
+            <TextBox Text="{Binding Password, Mode=OneWayToSource}"/>
+            <TextBox x:Name="rePass"/>
+            <Button x:Name="btn_d" Content="Зарегистрироваться" Click="ButtonClick"/>
+        </StackPanel>
+    </Grid>
+</Page>

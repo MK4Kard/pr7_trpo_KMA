@@ -20,3 +20,16 @@ C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KM
 C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\pr7_trpo_1_KMA.genruntimeconfig.cache
 C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\ref\pr7_trpo_1_KMA.dll
 C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\Pages\PageEnter.g.cs
+C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\Pages\PageEnter.baml
+C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\Pages\Registration.g.cs
+C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\Pages\Registration.baml
+C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\Pages\PageDoctor.g.cs
+C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\Pages\PageDoctor.baml
+C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\Pages\PageCreatePacient.g.cs
+C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\Pages\PageCreatePacient.baml
+C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\Pages\PageChange.g.cs
+C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\Pages\PageChange.baml
+C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\Pages\PageAppointment.g.cs
+C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\Pages\PageAppointment.baml
+C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\App.baml
