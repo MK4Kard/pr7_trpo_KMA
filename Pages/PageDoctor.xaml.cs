@@ -26,10 +26,11 @@ namespace pr7_trpo_1_KMA.Pages
         public ObservableCollection<Pacient> Pacients { get; set; } = new();
         public Pacient? SelectedPacient { get; set; }
         private Doctor doctor;
+        private Count count = new Count();
         public static List<int> listId = new List<int>();
         public static List<int> listP = new List<int>();
 
-        public PageDoctor(Doctor doc)
+        public PageDoctor(Doctor d)
         {
             LoadId();
             foreach (var id in listP)
@@ -42,11 +43,14 @@ namespace pr7_trpo_1_KMA.Pages
 
                 Pacients.Add(restored);
             }
-            doctor = doc;
+            doctor = d;
             InitializeComponent();
             DataContext = this;
-            docInfo.DataContext = doc;
-            Update();
+            docInfo.DataContext = doctor;
+            info.DataContext = count;
+            count.CountD = listId.Count;
+            count.CountP = listP.Count;
+            count.CountAll = listId.Count + listP.Count;
         }
 
         private void LoadId()
@@ -57,15 +61,15 @@ namespace pr7_trpo_1_KMA.Pages
             listP = JsonSerializer.Deserialize<List<int>>(jsonP);
         }
 
-        private void Update()
+        private void SaveId()
         {
-            var countD = listId.Count;
-            var countP = listP.Count;
-            var count = countD + countP;
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true
+            };
 
-            Count.Content = count.ToString();
-            CountD.Content = countD.ToString();
-            CountP.Content = countP.ToString();
+            string jsonP = JsonSerializer.Serialize(listP, options);
+            File.WriteAllText("pacId.json", jsonP);
         }
 
         private void CreatePac(object sender, RoutedEventArgs e)
@@ -93,6 +97,59 @@ namespace pr7_trpo_1_KMA.Pages
             }
 
             NavigationService.Navigate(new PageChange(SelectedPacient));
+        }
+
+        private void BackClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
+
+        private void Delete(object sender, RoutedEventArgs e)
+        {
+            if (SelectedPacient == null)
+            {
+                MessageBox.Show("Пациент не выбран");
+                return;
+            }
+
+            listP.Remove(SelectedPacient.IdP);
+            string path = $"Pacients/P_{SelectedPacient.IdP}.json";
+            File.Delete(path);
+            Pacients.Remove(SelectedPacient);
+
+            SaveId();
+        }
+    }
+
+    public class Count()
+    {
+        private int _countD = 0;
+        public int CountD
+        {
+            get => _countD;
+            set
+            {
+                _countD = value;
+            }
+        }
+        private int _countP = 0;
+        public int CountP
+        {
+            get => _countP;
+            set
+            {
+                _countP = value;
+            }
+        }
+
+        private int _countAll = 0 + 0;
+        public int CountAll
+        {
+            get => _countAll;
+            set
+            {
+                _countAll = value;
+            }
         }
     }
 }

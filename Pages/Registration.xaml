@@ -5,15 +5,19 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:pr7_trpo_1_KMA.Pages"
       mc:Ignorable="d"
-      WindowHeight="255" WindowWidth="320"
-      Height="185" Width="300"
+      d:Width="850" d:Height="500"
       Title="Registration">
-    <Grid Background="#FFECECEC">
+    <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="120"/>
+            <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Style="{StaticResource RowTop}"/>
+            <RowDefinition Style="{StaticResource RowBttm}"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Grid.Column="0" Content="Назад" Click="BackClick"/>
+        <StackPanel Grid.Column="0" Grid.Row="1">
             <Label Content="Фамилия"/>
             <Label Content="Имя"/>
             <Label Content="Отчество"/>
@@ -22,7 +26,7 @@
             <Label Content="Повторите пароль"/>
             <Label Content="id "/>
         </StackPanel>
-        <StackPanel Grid.Column="1">
+        <StackPanel Grid.Column="1" Grid.Row="1">
             <TextBox Text="{Binding Name, Mode=OneWayToSource}"/>
             <TextBox Text="{Binding LastName, Mode=OneWayToSource}"/>
             <TextBox Text="{Binding MiddleName, Mode=OneWayToSource}"/>

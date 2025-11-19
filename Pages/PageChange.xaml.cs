@@ -50,6 +50,7 @@ namespace pr7_trpo_1_KMA.Pages
                 restored.LastNameP = currentP.LastNameP;
                 restored.MiddleNameP = currentP.MiddleNameP;
                 restored.BirthDay = currentP.BirthDay;
+                restored.PhoneNumber = currentP.PhoneNumber;
 
                 string jsonP = JsonSerializer.Serialize<Pacient>(restored, options);
 
@@ -74,6 +75,12 @@ namespace pr7_trpo_1_KMA.Pages
             currentP.LastNameP = restored.LastNameP;
             currentP.MiddleNameP = restored.MiddleNameP;
             currentP.BirthDay = restored.BirthDay;
+            currentP.PhoneNumber = restored.PhoneNumber;
+        }
+
+        private void BackClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
         }
     }
 }

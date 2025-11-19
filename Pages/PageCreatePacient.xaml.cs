@@ -77,7 +77,8 @@ namespace pr7_trpo_1_KMA.Pages
                     NameP = currentP.NameP,
                     LastNameP = currentP.LastNameP,
                     MiddleNameP = currentP.MiddleNameP,
-                    BirthDay = currentP.BirthDay
+                    BirthDay = currentP.BirthDay,
+                    PhoneNumber = currentP.PhoneNumber
                 };
 
                 var options = new JsonSerializerOptions
@@ -99,7 +100,7 @@ namespace pr7_trpo_1_KMA.Pages
 
         private void BackClick(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new PageDoctor(doctor));
+            NavigationService.GoBack();
         }
     }
 }

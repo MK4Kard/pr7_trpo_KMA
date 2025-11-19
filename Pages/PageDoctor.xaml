@@ -5,25 +5,27 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:pr7_trpo_1_KMA.Pages"
       mc:Ignorable="d" 
-      WindowHeight="420" WindowWidth="635"
-      Height="350" Width="615"
-      Title="Прием" Background="WhiteSmoke">
+      d:Width="800" d:Height="600"
+      Title="Прием">
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Style="{StaticResource MinCol}"/>
+            <ColumnDefinition Style="{StaticResource MaxCol2}"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition Height="50"/>
+            <RowDefinition Style="{StaticResource RowTop}"/>
+            <RowDefinition Style="{StaticResource RowBttm}"/>
+            <RowDefinition Style="{StaticResource RowTop}"/>
+            <RowDefinition Style="{StaticResource RowTop}"/>
         </Grid.RowDefinitions>
-        <Grid x:Name="docInfo" Grid.Column="0" Margin="10 10 0 10" Background="#FFECECEC">
+        <Button Content="Назад" Click="BackClick" Grid.Row="0"/>
+        <Grid x:Name="docInfo" Grid.Column="0" Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition Style="{StaticResource MinCol2}"/>
+                <ColumnDefinition Style="{StaticResource MinCol2}"/>
             </Grid.ColumnDefinitions>
-            <Label Content="Данные" Grid.ColumnSpan="2"/>
+            <Label Content="Данные" Grid.ColumnSpan="2" Style="{StaticResource Top}"/>
             <StackPanel Grid.Column="0">
                 <Label Content="id"/>
                 <Label Content="Фамилия"/>
@@ -41,37 +43,37 @@
                 <Label Content="{Binding Password, Mode=OneWay}"/>
             </StackPanel>
         </Grid>
-        <Grid Grid.Column="1" Margin="10 10 10 10" Background="#FFECECEC">
+        <Grid Grid.Column="1" Grid.Row="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="30"/>
-                <RowDefinition Height="40"/>
-                <RowDefinition/>
+                <RowDefinition Style="{StaticResource RowTop}"/>
+                <RowDefinition Style="{StaticResource RowTop}"/>
+                <RowDefinition Style="{StaticResource RowBottom}"/>
             </Grid.RowDefinitions>
-            <Label Content="Список пациентов" Grid.Row="0"/>
-            <StackPanel Grid.Row="1">
-                <Button Content="Создать пациента" Click="CreatePac"/>
-                <Button Content="Начать приём" Click="Start"/>
-                <Button Content="Изменить информацию" Click="RePacient"/>
+            <Label Content="Список пациентов" Grid.Row="0" Style="{StaticResource Top}"/>
+            <StackPanel Grid.Row="1" Style="{StaticResource HorSP}">
+                <Button Content="Создать пациента" Click="CreatePac" Style="{StaticResource AddBtn}"/>
+                <Button Content="Начать приём" Click="Start" Style="{StaticResource AppBtn}"/>
+                <Button Content="Изменить информацию" Click="RePacient" Style="{StaticResource AppBtn}"/>
             </StackPanel>
             <ListView Grid.Row="2"
                       ItemsSource="{Binding Pacients}"
-                      SelectedItem="{Binding SelectedPacient}">
+                      SelectedItem="{Binding SelectedPacient}" Style="{StaticResource MiniList}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel>
-                            <StackPanel>
+                            <StackPanel Style="{StaticResource HorSPL}">
                                 <TextBlock Text="id: "/>
                                 <TextBlock Text="{Binding IdP}"/>
                             </StackPanel>
-                            <StackPanel>
+                            <StackPanel Style="{StaticResource HorSPL}">
                                 <TextBlock Text="Фамилия: "/>
                                 <TextBlock Text="{Binding NameP}"/>
                             </StackPanel>
-                            <StackPanel>
+                            <StackPanel Style="{StaticResource HorSPL}">
                                 <TextBlock Text="Имя: "/>
                                 <TextBlock Text="{Binding LastNameP}"/>
                             </StackPanel>
-                            <StackPanel>
+                            <StackPanel Style="{StaticResource HorSPL}">
                                 <TextBlock Text="Отчество: "/>
                                 <TextBlock Text="{Binding MiddleNameP}"/>
                             </StackPanel>
@@ -80,13 +82,14 @@
                 </ListView.ItemTemplate>
             </ListView>
         </Grid>
-        <DockPanel Grid.Row="2" Grid.ColumnSpan="2">
-            <Label Content="Количество файлов:"/>
-            <Label x:Name="Count" Content="0"/>
-            <Label Content="Количество пользователей:"/>
-            <Label x:Name="CountD" Content="0"/>
-            <Label Content="Количество пациентов:"/>
-            <Label x:Name="CountP" Content="0"/>
+        <Button Grid.Column="1" Grid.Row="2" Content="Удалить" Click="Delete" Style="{StaticResource DeleteBtn}"/>
+        <DockPanel Grid.Row="3" Grid.ColumnSpan="2" x:Name="info">
+            <Label Style="{StaticResource Info}" Content="Количество файлов:"/>
+            <Label Style="{StaticResource Info}" Content="{Binding CountAll, Mode=OneWay}"/>
+            <Label Style="{StaticResource Info}" Content="Количество пользователей:"/>
+            <Label Style="{StaticResource Info}" Content="{Binding CountD, Mode=OneWay}"/>
+            <Label Style="{StaticResource Info}" Content="Количество пациентов:"/>
+            <Label Style="{StaticResource Info}" Content="{Binding CountP, Mode=OneWay}"/>
         </DockPanel>
     </Grid>
 </Page>

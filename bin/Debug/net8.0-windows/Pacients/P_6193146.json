@@ -4,6 +4,7 @@
   "LastNameP": "1",
   "MiddleNameP": "1",
   "BirthDay": "2001-01-01T00:00:00",
+  "PhoneNumber": 1,
   "Appointments": [
     {
       "Date": "2025-11-17T00:10:07.7249325+05:00",
@@ -28,12 +29,6 @@
       "DocId": 17759,
       "Diagnosis": "1",
       "Recomendations": "1"
-    },
-    {
-      "Date": "2025-11-17T08:48:47.7512784+05:00",
-      "DocId": 17759,
-      "Diagnosis": "2",
-      "Recomendations": "2"
     }
   ]
 }

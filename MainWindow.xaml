@@ -5,198 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pr7_trpo_1_KMA"
         mc:Ignorable="d"
-        Title="Окно приема пациента" Height="650" Width="900">
-    <Window.Resources>
-        <local:Pacient x:Key="CurrentPacient"/>
-        <local:Doctor x:Key="CurrentUser"/>
-    </Window.Resources>
-    <Grid Margin="10">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+        Style="{StaticResource Main}"
+        Title="Окно приема пациента">
+    <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition Height="50"/>
+            <RowDefinition Style="{StaticResource RowTop}"/>
+            <RowDefinition Style="{StaticResource RowMax}"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0" Grid.Column="0" Margin="0 0 10 10">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition Height="65"/>
-            </Grid.RowDefinitions>
-            <Grid Grid.Row="0" Background="#FFECECEC">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="120"/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <StackPanel Grid.Column="0">
-                    <Label Content="Фамилия" VerticalAlignment="Center"/>
-                    <Label Content="Имя" VerticalAlignment="Center"/>
-                    <Label Content="Отчество" VerticalAlignment="Center"/>
-                    <Label Content="Специальность" VerticalAlignment="Center"/>
-                    <Label Content="Пароль" VerticalAlignment="Center"/>
-                    <Label Content="Повторите пароль" VerticalAlignment="Center"/>
-                    <Label Content="id " VerticalAlignment="Center"/>
-                </StackPanel>
-                <StackPanel Grid.Column="1">
-                    <StackPanel.DataContext>
-                        <Binding Source="{StaticResource CurrentUser}"/>
-                    </StackPanel.DataContext>
-                    <TextBox Text="{Binding Name, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" Margin="4" VerticalAlignment="Center"/>
-                    <TextBox Text="{Binding LastName, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" Margin="4" VerticalAlignment="Center"/>
-                    <TextBox Text="{Binding MiddleName, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" Margin="4" VerticalAlignment="Center"/>
-                    <TextBox Margin="4" Text="{Binding Specialisation, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center"/>
-                    <TextBox Margin="4" Text="{Binding Password, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center"/>
-                    <TextBox x:Name="rePass" Margin="4" VerticalAlignment="Center"/>
-                    <Button x:Name="btn_d" Margin="4" Content="Зарегистрироваться" VerticalAlignment="Center" Click="ButtonDClick"/>
-                </StackPanel>
-            </Grid>
-            <Grid Grid.Row="1" Background="#FFECECEC" Margin="0 10 0 0">
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <StackPanel Grid.Row="0" Orientation="Horizontal">
-                    <Label Content="id" Margin="3 0 0 0"/>
-                    <TextBox x:Name="idD" Width="60" VerticalAlignment="Center"/>
-                    <Label Content="Пароль" Margin="20 0 0 0"/>
-                    <TextBox x:Name="passD" Width="120" VerticalAlignment="Center"/>
-                </StackPanel>
-                <Button Grid.Row="1" Content="Войти" Margin="4" Click="ButtonEnter"/>
-            </Grid>
-        </Grid>
-        <Grid x:Name="doctorInfo" Grid.Row="1" Grid.Column="0" Margin="0 0 10 0" Background="#FFECECEC" IsEnabled="False">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Label Content="Данные" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
-            <StackPanel Grid.Column="0" Margin="0 25 0 0">
-                <Label Content="id" VerticalAlignment="Center"/>
-                <Label Content="Фамилия" VerticalAlignment="Center"/>
-                <Label Content="Имя" VerticalAlignment="Center"/>
-                <Label Content="Отчество" VerticalAlignment="Center"/>
-                <Label Content="Специальность" VerticalAlignment="Center"/>
-                <Label Content="Пароль" VerticalAlignment="Center"/>
-            </StackPanel>
-            <StackPanel Grid.Column="1" Margin="0 25 5 0">
-                <Label Content="{Binding Id, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
-                <Label Content="{Binding Name, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
-                <Label Content="{Binding LastName, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
-                <Label Content="{Binding MiddleName, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
-                <Label Content="{Binding Specialisation, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
-                <Label Content="{Binding Password, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
-            </StackPanel>
-        </Grid>
-        <Grid x:Name="pacientAdd" Grid.Row="0" Grid.Column="2" Margin="10 0 0 10" Background="#FFECECEC" IsEnabled="False">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120"/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Grid.DataContext>
-                <Binding Source="{StaticResource CurrentPacient}"/>
-            </Grid.DataContext>
-            <Label Grid.ColumnSpan="2" Content="Добавление пациента" HorizontalAlignment="Center"/>
-            <StackPanel Grid.Column="0" Margin="0 25 0 0">
-                <Label Content="Фамилия" VerticalAlignment="Center"/>
-                <Label Content="Имя" VerticalAlignment="Center"/>
-                <Label Content="Отчество" VerticalAlignment="Center"/>
-                <Label Content="Дата рождения" VerticalAlignment="Center"/>
-            </StackPanel>
-            <StackPanel Grid.Column="1" Margin="0 25 0 0">
-                <TextBox Text="{Binding NameP, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" Margin="4" VerticalAlignment="Center"/>
-                <TextBox Text="{Binding LastNameP, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" Margin="4" VerticalAlignment="Center"/>
-                <TextBox Text="{Binding MiddleNameP, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" Margin="4" VerticalAlignment="Center"/>
-                <DatePicker SelectedDate="{Binding BirthDay, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" Margin="4 1 4 1" VerticalAlignment="Center" DisplayDateStart="1990-01-01" DisplayDateEnd="2026-01-01"/>
-            </StackPanel>
-            <Button Margin="4" Height="25" Content="Зарегистрировать" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Click="ButtonPClick"/>
-        </Grid>
-        <Grid x:Name="pacientRe" Grid.Row="1" Grid.Column="2" Margin="10 0 0 0" Background="#FFECECEC" IsEnabled="False">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120"/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Grid.DataContext>
-                <Binding Source="{StaticResource CurrentPacient}"/>
-            </Grid.DataContext>
-            <Label Grid.ColumnSpan="2" Content="Изменение данных пациента" HorizontalAlignment="Center"/>
-            <StackPanel Grid.Column="0" Margin="0 25 0 0">
-                <Label Content="Фамилия" VerticalAlignment="Center"/>
-                <Label Content="Имя" VerticalAlignment="Center"/>
-                <Label Content="Отчество" VerticalAlignment="Center"/>
-                <Label Content="Дата рождения" VerticalAlignment="Center"/>
-            </StackPanel>
-            <StackPanel Grid.Column="1" Margin="0 25 0 0">
-                <TextBox Text="{Binding NameP, Mode=TwoWay}" Margin="4" VerticalAlignment="Center"/>
-                <TextBox Text="{Binding LastNameP, Mode=TwoWay}" Margin="4" VerticalAlignment="Center"/>
-                <TextBox Text="{Binding MiddleNameP, Mode=TwoWay}" Margin="4" VerticalAlignment="Center"/>
-                <DatePicker SelectedDate="{Binding BirthDay, Mode=TwoWay}" Margin="4 1 4 1" VerticalAlignment="Center" DisplayDateStart="1990-01-01" DisplayDateEnd="2026-01-01"/>
-            </StackPanel>
-            <StackPanel Grid.ColumnSpan="2" VerticalAlignment="Bottom">
-                <Button Margin="4" Content="Вернуть" Grid.ColumnSpan="2" Click="ButtonPBack"/>
-                <Button Margin="4" Content="Сохранить" Grid.ColumnSpan="2" Click="ButtonPSave"/>
-            </StackPanel>
-        </Grid>
-        <Grid Grid.RowSpan="2" Grid.Column="1">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="45"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <DockPanel x:Name="pacientsList" IsEnabled="false" Grid.Row="0" Background="#FFECECEC" VerticalAlignment="Top">
-                <ComboBox x:Name="pacients" VerticalAlignment="Top" IsEditable="True" Margin="4 4 4 10" SelectionChanged="pacients_SelectionChanged"/>
-            </DockPanel>
-            <Grid x:Name="appointment" Grid.Row="1" Grid.RowSpan="2" Background="#FFECECEC" IsEnabled="False">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Grid.DataContext>
-                    <Binding Source="{StaticResource CurrentPacient}"/>
-                </Grid.DataContext>
-                <Label Content="Приём" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
-                <StackPanel Grid.Column="0" Margin="0 25 0 0">
-                    <Label Content="Фамилия" VerticalAlignment="Center"/>
-                    <Label Content="Имя" VerticalAlignment="Center"/>
-                    <Label Content="Отчество" VerticalAlignment="Center"/>
-                    <Label Content="Дата рождения" VerticalAlignment="Center"/>
-                    <Label Content="Последний приём" VerticalAlignment="Center"/>
-                    <Label Content="Последний доктор" VerticalAlignment="Center"/>
-                    <Label Content="Диагноз" VerticalAlignment="Center"/>
-                    <Label Content="Рекомендации" VerticalAlignment="Center"/>
-                </StackPanel>
-                <StackPanel Grid.Column="1" Margin="0 25 5 0">
-                    <Label Content="{Binding NameP, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
-                    <Label Content="{Binding LastNameP, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
-                    <Label Content="{Binding MiddleNameP, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
-                    <Label Content="{Binding BirthDay, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
-                    <DatePicker SelectedDate="{Binding LastAppointment, Mode=TwoWay}" Margin="4 1 4 1" VerticalAlignment="Center" DisplayDateStart="1990-01-01" DisplayDateEnd="2026-01-01"/>
-                    <Label Content="{Binding LastDoctor, Mode=TwoWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
-                    <TextBox Text="{Binding Diagnosis, Mode=TwoWay}" VerticalAlignment="Center" Margin="4"/>
-                    <TextBox Text="{Binding Recomendations, Mode=TwoWay}" VerticalAlignment="Center" Margin="4"/>
-                </StackPanel>
-                <StackPanel Grid.ColumnSpan="2" VerticalAlignment="Bottom">
-                    <Button Content="Вернуть" Margin="4" Click="ButtonBack"/>
-                    <Button Content="Сохранить" Margin="4" Click="ButtonSave" VerticalAlignment="Bottom"/>
-                </StackPanel>
-            </Grid>
-        </Grid>
-        <DockPanel Grid.Row="2" Grid.ColumnSpan="3" Margin="0 10 0 0" Background="#FFECECEC">
-            <DockPanel.DataContext>
-                <Binding Source="{StaticResource CurrentPacient}"/>
-            </DockPanel.DataContext>
-            <Label Content="Количество файлов:" VerticalAlignment="Center"/>
-            <Label x:Name="Count" Content="0" VerticalAlignment="Center" Margin="0 0 5 0"/>
-            <Label Content="Количество пользователей:" VerticalAlignment="Center"/>
-            <StackPanel VerticalAlignment="Center">
-                <StackPanel.DataContext>
-                    <Binding Source="{StaticResource CurrentUser}"/>
-                </StackPanel.DataContext>
-                <Label x:Name="CountD" Content="0" Margin="0 0 5 0"/>
-            </StackPanel>
-            <Label Content="Количество пациентов:" VerticalAlignment="Center"/>
-            <Label x:Name="CountP" Content="0" VerticalAlignment="Center" Margin="0 0 5 0"/>
-        </DockPanel>
+        <StackPanel Style="{StaticResource HorSPL}">
+            <Menu>
+                <MenuItem Header="Меню">
+                    <MenuItem Header="Настройки">
+                        <MenuItem Header="Сменить тему"
+                                  Click="ChangeTheme_Click"/>
+                    </MenuItem>
+                </MenuItem>
+            </Menu>
+        </StackPanel>
+        <Frame Grid.Row="1" x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

@@ -15,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static Microsoft.Azure.Amqp.Serialization.SerializableType;
 
 namespace pr7_trpo_1_KMA.Pages
 {
@@ -24,6 +25,7 @@ namespace pr7_trpo_1_KMA.Pages
     public partial class PageAppointment : Page
     {
         public ObservableCollection<Appointment> Apps { get; set; } = new();
+        public Appointment? SelectedAppointment { get; set; }
         private Doctor doctor;
         private Pacient pacient;
         private Appointment apps = new Appointment();
@@ -74,6 +76,39 @@ namespace pr7_trpo_1_KMA.Pages
             File.WriteAllText(path, jsonP);
 
             MessageBox.Show("Информация сохранена");
+        }
+
+        private void BackClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
+
+        private void Delete(object sender, RoutedEventArgs e)
+        {
+            if (SelectedAppointment == null)
+            {
+                MessageBox.Show("Пациент не выбран");
+                return;
+            }
+
+            Apps.Remove(SelectedAppointment);
+
+
+            string path = $"Pacients/P_{pacient.IdP}.json";
+            string json = File.ReadAllText(path);
+
+            Pacient? restored = JsonSerializer.Deserialize<Pacient>(json);
+
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true
+            };
+
+            restored.Appointments = Apps;
+
+            string jsonP = JsonSerializer.Serialize<Pacient>(restored, options);
+
+            File.WriteAllText(path, jsonP);
         }
     }
 }

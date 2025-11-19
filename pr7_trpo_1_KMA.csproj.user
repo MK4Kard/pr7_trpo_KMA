@@ -45,5 +45,35 @@
     <Page Update="Pages\PageEnter.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Styles\Colors\DarkTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Colors\Default.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\UI\Button.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\UI\DatePicker.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\UI\GridRow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\UI\Label.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\UI\ListView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\UI\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\UI\StackPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\UI\TextBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 </Project>

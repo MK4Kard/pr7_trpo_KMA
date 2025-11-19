@@ -1,0 +1,7 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="DatePicker">
+        <Setter Property="DisplayDateStart" Value="1990.01.01"/>
+        <Setter Property="DisplayDateEnd" Value="2026.01.01"/>
+    </Style>
+</ResourceDictionary>

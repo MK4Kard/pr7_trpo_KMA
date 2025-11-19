@@ -1,11 +1,52 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {}
+    "net8.0-windows7.0": {
+      "Microsoft.Azure.Amqp/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Azure.Amqp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Azure.Amqp.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Microsoft.Azure.Amqp/2.7.0": {
+      "sha512": "gm/AEakujttMzrDhZ5QpRz3fICVkYDn/oDG9SmxDP+J7R8JDBXYU9WWG7hr6wQy40mY+wjUF0yUGXDPRDRNJwQ==",
+      "type": "package",
+      "path": "microsoft.azure.amqp/2.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/icon.png",
+        "lib/monoandroid/Microsoft.Azure.Amqp.dll",
+        "lib/net45/Microsoft.Azure.Amqp.dll",
+        "lib/net45/Microsoft.Azure.Amqp.xml",
+        "lib/net8.0/Microsoft.Azure.Amqp.dll",
+        "lib/net8.0/Microsoft.Azure.Amqp.xml",
+        "lib/netstandard1.3/Microsoft.Azure.Amqp.dll",
+        "lib/netstandard1.3/Microsoft.Azure.Amqp.xml",
+        "lib/netstandard2.0/Microsoft.Azure.Amqp.dll",
+        "lib/netstandard2.0/Microsoft.Azure.Amqp.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Microsoft.Azure.Amqp.dll",
+        "lib/uap10.0/Microsoft.Azure.Amqp.dll",
+        "lib/uap10.0/Microsoft.Azure.Amqp.pri",
+        "microsoft.azure.amqp.2.7.0.nupkg.sha512",
+        "microsoft.azure.amqp.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": []
+    "net8.0-windows7.0": [
+      "Microsoft.Azure.Amqp >= 2.7.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\DNS\\.nuget\\packages\\": {},
@@ -56,6 +97,12 @@
     "frameworks": {
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
+        "dependencies": {
+          "Microsoft.Azure.Amqp": {
+            "target": "Package",
+            "version": "[2.7.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -78,5 +125,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Произошла ошибка при получении данных уязвимости пакета: Не удалось загрузить индекс службы для источника https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

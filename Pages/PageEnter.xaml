@@ -5,20 +5,21 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:pr7_trpo_1_KMA.Pages"
       mc:Ignorable="d" 
-      WindowHeight="270" WindowWidth="170"
-      Height="200" Width="150"
-      Title="Вход в приложение" Background="WhiteSmoke">
-    <Grid Margin="5">
+      d:Width="800" d:Height="500"
+      Title="Вход в приложение">
+    <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="55"/>
-            <RowDefinition Height="55"/>
             <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Style="{StaticResource RowBottom}"/>
         </Grid.RowDefinitions>
         <Label Grid.Row="0" Content="Id"/>
-        <TextBox Text="{Binding Id}" Grid.Row="0"/>
+        <TextBox Text="{Binding Id}" Grid.Row="0" Style="{StaticResource BottomTextBox}"/>
         <Label Grid.Row="1" Content="Пароль"/>
-        <TextBox Text="{Binding Password}" Grid.Row="1"/>
-        <Button Grid.Row="2" Click="ButtonEnter">Войти</Button>
-        <Button Grid.Row="2" Content="Регистрация" Click="EnterReg"/>
+        <TextBox Text="{Binding Password}" Grid.Row="1" Style="{StaticResource BottomTextBox}"/>
+        <StackPanel Grid.Row="2" Style="{StaticResource BottomSP}">
+            <Button Click="ButtonEnter">Войти</Button>
+            <Button Content="Регистрация" Click="EnterReg" Style="{StaticResource BottomBtn}"/>
+        </StackPanel>
     </Grid>
 </Page>

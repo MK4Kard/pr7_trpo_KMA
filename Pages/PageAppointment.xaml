@@ -5,67 +5,74 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:pr7_trpo_1_KMA.Pages"
       mc:Ignorable="d" 
-      WindowHeight="420" WindowWidth="675"
-      Height="350" Width="655"
-      Title="Прием" Background="WhiteSmoke">
+      d:Width="800" d:Height="540"
+      Title="Прием">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Style="{StaticResource RowTop}"/>
+            <RowDefinition Style="{StaticResource RowBottMax}"/>
+            <RowDefinition Style="{StaticResource RowTop2}"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="350"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Style="{StaticResource MinCol}"/>
+            <ColumnDefinition Style="{StaticResource MaxCol2}"/>
         </Grid.ColumnDefinitions>
-        <Grid Grid.Column="0" Margin="10 10 0 10" Background="#FFECECEC">
+        <Button Content="Назад" Click="BackClick"/>
+        <Grid Grid.Column="0" Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100"/>
-                <ColumnDefinition/>
+                <ColumnDefinition Style="{StaticResource MinCol2}"/>
+                <ColumnDefinition Style="{StaticResource MinCol2}"/>
             </Grid.ColumnDefinitions>
-            <Label Content="Данные" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
-            <StackPanel Grid.Column="0" Margin="0 25 0 0">
-                <Label Content="Фамилия" VerticalAlignment="Center"/>
-                <Label Content="Имя" VerticalAlignment="Center"/>
-                <Label Content="Отчество" VerticalAlignment="Center"/>
-                <Label Content="Дата рождения" VerticalAlignment="Center"/>
-                <Label Content="Диагноз" VerticalAlignment="Center"/>
-                <Label Content="Рекомендации" VerticalAlignment="Center"/>
+            <Label Content="Данные" Grid.ColumnSpan="2" Style="{StaticResource Top}"/>
+            <StackPanel Grid.Column="0">
+                <Label Content="Фамилия"/>
+                <Label Content="Имя"/>
+                <Label Content="Отчество"/>
+                <Label Content="Дата рождения"/>
+                <Label Content="Номер телефона"/>
+                <Label Content="Диагноз"/>
+                <Label Content="Рекомендации"/>
             </StackPanel>
-            <StackPanel Grid.Column="1" Margin="0 25 5 0">
+            <StackPanel Grid.Column="1">
                 <StackPanel x:Name="pacientInfo">
-                    <Label Content="{Binding NameP, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
-                    <Label Content="{Binding LastNameP, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
-                    <Label Content="{Binding MiddleNameP, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
-                    <Label Content="{Binding BirthDay, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                    <Label Content="{Binding NameP, Mode=OneWay}"/>
+                    <Label Content="{Binding LastNameP, Mode=OneWay}"/>
+                    <Label Content="{Binding MiddleNameP, Mode=OneWay}"/>
+                    <Label Content="{Binding BirthDay, Mode=OneWay}"/>
+                    <Label Content="{Binding PhoneNumber, Mode=OneWay}"/>
                 </StackPanel>
                 <StackPanel x:Name="docPac">
-                    <TextBox Text="{Binding Diagnosis}" Margin="4" VerticalAlignment="Center"/>
-                    <TextBox Text="{Binding Recomendations}" Margin="4" VerticalAlignment="Center"/>
+                    <TextBox Text="{Binding Diagnosis}"/>
+                    <TextBox Text="{Binding Recomendations}"/>
                 </StackPanel>
             </StackPanel>
-            <StackPanel Grid.ColumnSpan="2" VerticalAlignment="Bottom">
-                <Button Content="Сохранить" Margin="4" Click="ButtonSave" VerticalAlignment="Bottom"/>
+            <StackPanel Grid.ColumnSpan="2" Style="{StaticResource BottomSP}">
+                <Button Content="Сохранить" Click="ButtonSave"/>
             </StackPanel>
         </Grid>
-        <Grid Grid.Column="1" Margin="10 10 10 10" Background="#FFECECEC">
+        <Grid Grid.Column="1" Grid.Row="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="30"/>
-                <RowDefinition/>
+                <RowDefinition Style="{StaticResource RowTop}"/>
+                <RowDefinition Style="{StaticResource RowBottMax}"/>
             </Grid.RowDefinitions>
-            <Label Content="История приёмов" Grid.Row="0" HorizontalAlignment="Center"/>
-            <ListView Grid.Row="2" Margin="4"
+            <Label Content="История приёмов" Grid.Row="0" Style="{StaticResource Top}"/>
+            <ListView Grid.Row="2"
                   ItemsSource="{Binding Apps}"
                   SelectedItem="{Binding SelectedAppointment}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel>
-                            <StackPanel Orientation="Horizontal">
+                            <StackPanel Style="{StaticResource HorSPL}">
                                 <TextBlock Text="Дата: "/>
                                 <TextBlock Text="{Binding Date}"/>
                                 <TextBlock Text=" Доктор: "/>
                                 <TextBlock Text="{Binding DocId}"/>
                             </StackPanel>
-                            <StackPanel Orientation="Horizontal">
+                            <StackPanel Style="{StaticResource HorSPL}">
                                 <TextBlock Text="Диагноз: "/>
                                 <TextBlock Text="{Binding Diagnosis}"/>
                             </StackPanel>
-                            <StackPanel Orientation="Horizontal">
+                            <StackPanel Style="{StaticResource HorSPL}">
                                 <TextBlock Text="Рекомендации: "/>
                                 <TextBlock Text="{Binding Recomendations}"/>
                             </StackPanel>
@@ -74,5 +81,6 @@
                 </ListView.ItemTemplate>
             </ListView>
         </Grid>
+        <Button Grid.Column="1" Grid.Row="2" Content="Удалить" Click="Delete" Style="{StaticResource DeleteBtn}"/>
     </Grid>
 </Page>

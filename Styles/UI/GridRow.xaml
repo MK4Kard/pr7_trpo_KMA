@@ -1,0 +1,39 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="RowDefinition">
+        <Setter Property="Height" Value="120"/>
+    </Style>
+    <Style TargetType="ColumnDefinition">
+        <Setter Property="Width" Value="390"/>
+    </Style>
+    <Style TargetType="RowDefinition" x:Key="RowBottom" BasedOn="{StaticResource {x:Type RowDefinition}}">
+        <Setter Property="Height" Value="200"/>
+    </Style>
+    <Style TargetType="RowDefinition" x:Key="RowTop" BasedOn="{StaticResource {x:Type RowDefinition}}">
+        <Setter Property="Height" Value="60"/>
+    </Style>
+    <Style TargetType="RowDefinition" x:Key="RowTop2" BasedOn="{StaticResource {x:Type RowDefinition}}">
+        <Setter Property="Height" Value="40"/>
+    </Style>
+    <Style TargetType="RowDefinition" x:Key="RowBttm" BasedOn="{StaticResource {x:Type RowDefinition}}">
+        <Setter Property="Height" Value="340"/>
+    </Style>
+    <Style TargetType="RowDefinition" x:Key="RowBottMax" BasedOn="{StaticResource {x:Type RowDefinition}}">
+        <Setter Property="Height" Value="400"/>
+    </Style>
+    <Style TargetType="RowDefinition" x:Key="RowMax" BasedOn="{StaticResource {x:Type RowDefinition}}">
+        <Setter Property="Height" Value="500"/>
+    </Style>
+    <Style TargetType="ColumnDefinition" x:Key="MinCol" BasedOn="{StaticResource {x:Type ColumnDefinition}}">
+        <Setter Property="Width" Value="350"/>
+    </Style>
+    <Style TargetType="ColumnDefinition" x:Key="MinCol2" BasedOn="{StaticResource {x:Type ColumnDefinition}}">
+        <Setter Property="Width" Value="175"/>
+    </Style>
+    <Style TargetType="ColumnDefinition" x:Key="MaxCol" BasedOn="{StaticResource {x:Type ColumnDefinition}}">
+        <Setter Property="Width" Value="430"/>
+    </Style>
+    <Style TargetType="ColumnDefinition" x:Key="MaxCol2" BasedOn="{StaticResource {x:Type ColumnDefinition}}">
+        <Setter Property="Width" Value="450"/>
+    </Style>
+</ResourceDictionary>

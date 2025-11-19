@@ -1,0 +1,97 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="Button">
+        <Setter Property="Background" Value="{DynamicResource ButtonBackground}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ButtonForeground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorder}"/>
+        <Setter Property="BorderThickness" Value="2"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="Margin" Value="4"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            Height="{TemplateBinding Height}"
+                            Width="{TemplateBinding Width}"
+                            CornerRadius="5">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ButtonHover}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ButtonPressed}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style TargetType="Button" x:Key="BottomBtn" BasedOn="{StaticResource {x:Type Button}}">
+        <Setter Property="VerticalAlignment" Value="Bottom"/>
+    </Style>
+    <Style TargetType="Button" x:Key="AppBtn" BasedOn="{StaticResource {x:Type Button}}">
+        <Setter Property="FontSize" Value="15"/>
+    </Style>
+    <Style TargetType="Button" x:Key="DeleteBtn" BasedOn="{StaticResource {x:Type Button}}">
+        <Setter Property="Background" Value="{DynamicResource ButtonBackgroundDel}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorderDel}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    Height="{TemplateBinding Height}"
+                    Width="{TemplateBinding Width}"
+                    CornerRadius="5">
+                        <DockPanel>
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <Label Content="🗑" Foreground="{DynamicResource WhBackground}"/>
+                        </DockPanel>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ButtonHoverDel}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ButtonPressedDel}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style TargetType="Button" x:Key="AddBtn" BasedOn="{StaticResource AppBtn}">
+        <Setter Property="Background" Value="{DynamicResource ButtonBackgroundAdd}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorderAdd}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                Height="{TemplateBinding Height}"
+                Width="{TemplateBinding Width}"
+                CornerRadius="5">
+                        <DockPanel>
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <Label Content="+" Foreground="{DynamicResource WhBackground}"/>
+                        </DockPanel>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ButtonHoverAdd}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ButtonPressedAdd}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

@@ -98,5 +98,10 @@ namespace pr7_trpo_1_KMA.Pages
                 MessageBox.Show("Заполните все поля", "Ошибка");
             }
         }
+
+        private void BackClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
     }
 }
