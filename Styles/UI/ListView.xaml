@@ -8,4 +8,7 @@
     <Style TargetType="ListView" x:Key="MiniList" BasedOn="{StaticResource {x:Type ListView}}">
         <Setter Property="Height" Value="180"/>
     </Style>
+    <Style TargetType="ListView" x:Key="MiniHList" BasedOn="{StaticResource {x:Type ListView}}">
+        <Setter Property="Width" Value="200"/>
+    </Style>
 </ResourceDictionary>

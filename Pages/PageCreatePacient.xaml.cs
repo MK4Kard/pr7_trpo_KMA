@@ -55,47 +55,39 @@ namespace pr7_trpo_1_KMA.Pages
 
         private void CreateClick(object sender, RoutedEventArgs e)
         {
-            if (!(String.IsNullOrEmpty(currentP.NameP) || String.IsNullOrEmpty(currentP.LastNameP) || String.IsNullOrEmpty(currentP.MiddleNameP)))
+            int rndD = 0;
+
+            do
             {
-
-                int rndD = 0;
-
-                do
-                {
-                    rndD = rnd.Next(1000000, 10000000);
-                }
-                while (listP.Contains(rndD));
-
-                listP.Add(rndD);
-
-                string path = $"Pacients/P_{rndD}.json";
-                currentP.IdP = rndD;
-
-                Pacient pacient = new Pacient
-                {
-                    IdP = currentP.IdP,
-                    NameP = currentP.NameP,
-                    LastNameP = currentP.LastNameP,
-                    MiddleNameP = currentP.MiddleNameP,
-                    BirthDay = currentP.BirthDay,
-                    PhoneNumber = currentP.PhoneNumber
-                };
-
-                var options = new JsonSerializerOptions
-                {
-                    WriteIndented = true
-                };
-
-                string json = JsonSerializer.Serialize<Pacient>(pacient, options);
-                File.WriteAllText(path, json);
-
-                MessageBox.Show($"Пациент добавлен");
-                SaveId();
+                rndD = rnd.Next(1000000, 10000000);
             }
-            else
+            while (listP.Contains(rndD));
+
+            listP.Add(rndD);
+
+            string path = $"Pacients/P_{rndD}.json";
+            currentP.IdP = rndD;
+
+            Pacient pacient = new Pacient
             {
-                MessageBox.Show("Заполните все поля", "Ошибка");
-            }
+                IdP = currentP.IdP,
+                NameP = currentP.NameP,
+                LastNameP = currentP.LastNameP,
+                MiddleNameP = currentP.MiddleNameP,
+                BirthDay = currentP.BirthDay,
+                PhoneNumber = currentP.PhoneNumber
+            };
+
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true
+            };
+
+            string json = JsonSerializer.Serialize<Pacient>(pacient, options);
+            File.WriteAllText(path, json);
+
+            MessageBox.Show($"Пациент добавлен");
+            SaveId();
         }
 
         private void BackClick(object sender, RoutedEventArgs e)

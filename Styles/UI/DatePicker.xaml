@@ -3,5 +3,8 @@
     <Style TargetType="DatePicker">
         <Setter Property="DisplayDateStart" Value="1990.01.01"/>
         <Setter Property="DisplayDateEnd" Value="2026.01.01"/>
+        <Setter Property="Height" Value="28"/>
+        <Setter Property="Margin" Value="5 7.5 5 7.5"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
     </Style>
 </ResourceDictionary>

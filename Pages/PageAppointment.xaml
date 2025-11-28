@@ -10,25 +10,26 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Style="{StaticResource RowTop}"/>
-            <RowDefinition Style="{StaticResource RowBottMax}"/>
+            <RowDefinition Style="{StaticResource RowBttm2}"/>
             <RowDefinition Style="{StaticResource RowTop2}"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Style="{StaticResource MinCol}"/>
-            <ColumnDefinition Style="{StaticResource MaxCol2}"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Style="{StaticResource MaxCol3}"/>
         </Grid.ColumnDefinitions>
         <Button Content="Назад" Click="BackClick"/>
         <Grid Grid.Column="0" Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Style="{StaticResource MinCol2}"/>
-                <ColumnDefinition Style="{StaticResource MinCol2}"/>
+                <ColumnDefinition Style="{StaticResource MinCol3}"/>
+                <ColumnDefinition Style="{StaticResource MinCol3}"/>
             </Grid.ColumnDefinitions>
             <Label Content="Данные" Grid.ColumnSpan="2" Style="{StaticResource Top}"/>
             <StackPanel Grid.Column="0">
                 <Label Content="Фамилия"/>
                 <Label Content="Имя"/>
                 <Label Content="Отчество"/>
-                <Label Content="Дата рождения"/>
+                <Label Content="Возраст"/>
+                <Label Content="Совершеннолетие"/>
                 <Label Content="Номер телефона"/>
                 <Label Content="Диагноз"/>
                 <Label Content="Рекомендации"/>
@@ -38,8 +39,11 @@
                     <Label Content="{Binding NameP, Mode=OneWay}"/>
                     <Label Content="{Binding LastNameP, Mode=OneWay}"/>
                     <Label Content="{Binding MiddleNameP, Mode=OneWay}"/>
-                    <Label Content="{Binding BirthDay, Mode=OneWay}"/>
-                    <Label Content="{Binding PhoneNumber, Mode=OneWay}"/>
+                    <StackPanel x:Name="age">
+                        <Label Content="{Binding Age, Mode=OneWay}"/>
+                        <Label Content="{Binding Coming, Mode=OneWay}"/>
+                    </StackPanel>
+                    <TextBlock Style="{StaticResource TxtBl}" Text="{Binding PhoneNumber, StringFormat={}{0:# (###) ### ## ##}}"/>
                 </StackPanel>
                 <StackPanel x:Name="docPac">
                     <TextBox Text="{Binding Diagnosis}"/>
@@ -56,6 +60,9 @@
                 <RowDefinition Style="{StaticResource RowBottMax}"/>
             </Grid.RowDefinitions>
             <Label Content="История приёмов" Grid.Row="0" Style="{StaticResource Top}"/>
+            <StackPanel x:Name="appd" Grid.Row="0" Style="{StaticResource BottomSP}">
+                <Label Content="{Binding Date, Mode=OneWay}"/>
+            </StackPanel>
             <ListView Grid.Row="2"
                   ItemsSource="{Binding Apps}"
                   SelectedItem="{Binding SelectedAppointment}">

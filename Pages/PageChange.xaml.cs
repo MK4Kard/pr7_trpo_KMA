@@ -33,35 +33,28 @@ namespace pr7_trpo_1_KMA.Pages
 
         private void ButtonSave(object sender, RoutedEventArgs e)
         {
-            if (!(String.IsNullOrEmpty(currentP.NameP) || String.IsNullOrEmpty(currentP.LastNameP) || String.IsNullOrEmpty(currentP.MiddleNameP)))
+            string path = $"Pacients/P_{currentP.IdP}.json";
+
+            string json = File.ReadAllText(path);
+
+            Pacient? restored = JsonSerializer.Deserialize<Pacient>(json);
+
+            var options = new JsonSerializerOptions
             {
-                string path = $"Pacients/P_{currentP.IdP}.json";
+                WriteIndented = true
+            };
 
-                string json = File.ReadAllText(path);
+            restored.NameP = currentP.NameP;
+            restored.LastNameP = currentP.LastNameP;
+            restored.MiddleNameP = currentP.MiddleNameP;
+            restored.BirthDay = currentP.BirthDay;
+            restored.PhoneNumber = currentP.PhoneNumber;
 
-                Pacient? restored = JsonSerializer.Deserialize<Pacient>(json);
+            string jsonP = JsonSerializer.Serialize<Pacient>(restored, options);
 
-                var options = new JsonSerializerOptions
-                {
-                    WriteIndented = true
-                };
+            File.WriteAllText(path, jsonP);
 
-                restored.NameP = currentP.NameP;
-                restored.LastNameP = currentP.LastNameP;
-                restored.MiddleNameP = currentP.MiddleNameP;
-                restored.BirthDay = currentP.BirthDay;
-                restored.PhoneNumber = currentP.PhoneNumber;
-
-                string jsonP = JsonSerializer.Serialize<Pacient>(restored, options);
-
-                File.WriteAllText(path, jsonP);
-
-                MessageBox.Show($"Информация о пациенте изменена");
-            }
-            else
-            {
-                MessageBox.Show("Заполните все поля", "Ошибка");
-            }
+            MessageBox.Show($"Информация о пациенте изменена");
         }
 
         private void ButtonBack(object sender, RoutedEventArgs e)

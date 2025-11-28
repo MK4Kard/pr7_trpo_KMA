@@ -77,6 +77,10 @@
                                 <TextBlock Text="Отчество: "/>
                                 <TextBlock Text="{Binding MiddleNameP}"/>
                             </StackPanel>
+                            <StackPanel Style="{StaticResource HorSPL}">
+                                <TextBlock Text="Номер: "/>
+                                <TextBlock Text="{Binding PhoneNumber, StringFormat={}{0:# (###) ### ## ##}}"/>
+                            </StackPanel>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>

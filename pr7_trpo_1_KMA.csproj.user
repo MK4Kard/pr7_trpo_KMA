@@ -60,6 +60,9 @@
     <Page Update="Styles\UI\GridRow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Styles\UI\ItemsControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Styles\UI\Label.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -70,6 +73,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\UI\StackPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\UI\TextBlock.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\UI\TextBox.xaml">

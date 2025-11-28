@@ -16,7 +16,10 @@
         <Setter Property="Height" Value="40"/>
     </Style>
     <Style TargetType="RowDefinition" x:Key="RowBttm" BasedOn="{StaticResource {x:Type RowDefinition}}">
-        <Setter Property="Height" Value="340"/>
+        <Setter Property="Height" Value="380"/>
+    </Style>
+    <Style TargetType="RowDefinition" x:Key="RowBttm2" BasedOn="{StaticResource {x:Type RowDefinition}}">
+        <Setter Property="Height" Value="440"/>
     </Style>
     <Style TargetType="RowDefinition" x:Key="RowBottMax" BasedOn="{StaticResource {x:Type RowDefinition}}">
         <Setter Property="Height" Value="400"/>
@@ -30,10 +33,16 @@
     <Style TargetType="ColumnDefinition" x:Key="MinCol2" BasedOn="{StaticResource {x:Type ColumnDefinition}}">
         <Setter Property="Width" Value="175"/>
     </Style>
+    <Style TargetType="ColumnDefinition" x:Key="MinCol3" BasedOn="{StaticResource {x:Type ColumnDefinition}}">
+        <Setter Property="Width" Value="200"/>
+    </Style>
     <Style TargetType="ColumnDefinition" x:Key="MaxCol" BasedOn="{StaticResource {x:Type ColumnDefinition}}">
         <Setter Property="Width" Value="430"/>
     </Style>
     <Style TargetType="ColumnDefinition" x:Key="MaxCol2" BasedOn="{StaticResource {x:Type ColumnDefinition}}">
         <Setter Property="Width" Value="450"/>
+    </Style>
+    <Style TargetType="ColumnDefinition" x:Key="MaxCol3" BasedOn="{StaticResource {x:Type ColumnDefinition}}">
+        <Setter Property="Width" Value="410"/>
     </Style>
 </ResourceDictionary>

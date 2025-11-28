@@ -29,12 +29,16 @@ namespace pr7_trpo_1_KMA.Pages
         private Doctor doctor;
         private Pacient pacient;
         private Appointment apps = new Appointment();
+        private Ages ages = new Ages();
+        private AppDate ad = new AppDate();
         public PageAppointment(Doctor doc, Pacient pac)
         {
             InitializeComponent();
             docPac.DataContext = apps;
             doctor = doc;
             pacient = pac;
+            ages.Day = pacient.BirthDay;
+            age.DataContext = ages;
             pacientInfo.DataContext = pacient;
             if (pacient.Appointments != null)
             {
@@ -42,7 +46,9 @@ namespace pr7_trpo_1_KMA.Pages
                 {
                     Apps.Add(a);
                 }
+                ad.App = pacient.Appointments.Last();
             }
+            appd.DataContext = ad;
             DataContext = this;
         }
 
@@ -109,6 +115,64 @@ namespace pr7_trpo_1_KMA.Pages
             string jsonP = JsonSerializer.Serialize<Pacient>(restored, options);
 
             File.WriteAllText(path, jsonP);
+        }
+    }
+
+    public class Ages
+    {
+        public DateTime? Day { get; set; }
+        private int age = 0;
+        public int Age
+        {
+            get
+            {
+                if (Day == null)
+                    return 0;
+
+                var bd = Day.Value;
+                age = DateTime.Now.Year - bd.Year;
+
+                return age;
+            }
+        }
+
+        private string coming = "";
+        public string Coming
+        {
+            get
+            {
+                if (age >= 18)
+                    coming = "совершеннолетний";
+                else
+                    coming = "несовершеннолетний";
+
+                return coming;
+            }
+        }
+    }
+
+    public class AppDate
+    {
+        public Appointment? App { get; set; }
+
+        private string date = "";
+        public string Date
+        {
+            get
+            {
+                if (App != null)
+                {
+                    var days = (DateTime.Now.Date - App.Date.Date).Days;
+
+                    date = $"Приём был {days} дней назад";
+                }
+                else
+                {
+                    date = "Первый приём";
+                }
+
+                return date;
+            }
         }
     }
 }

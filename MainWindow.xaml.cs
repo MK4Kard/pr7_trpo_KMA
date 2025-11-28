@@ -157,8 +157,8 @@ namespace pr7_trpo_1_KMA
             }
         }
 
-        private DateTime _birthday = new DateTime(1990, 01, 01);
-        public DateTime BirthDay
+        private DateTime? _birthday;
+        public DateTime? BirthDay
         {
             get => _birthday;
             set
@@ -167,9 +167,9 @@ namespace pr7_trpo_1_KMA
                 OnPropertyChanged();
             }
         }
-
-        private int _phoneNumber = 1234567;
-        public int PhoneNumber
+        
+        private long? _phoneNumber;
+        public long? PhoneNumber
         {
             get => _phoneNumber;
             set

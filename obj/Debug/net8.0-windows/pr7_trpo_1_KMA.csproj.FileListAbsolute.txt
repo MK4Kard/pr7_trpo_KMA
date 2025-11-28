@@ -47,3 +47,6 @@ C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KM
 C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\Styles\UI\DatePicker.baml
 C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\Styles\UI\DockPanel.baml
 C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\Styles\UI\MainWindow.baml
+C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\Styles\UI\TextBlock.baml
+C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\obj\Debug\net8.0-windows\Styles\UI\ItemsControl.baml

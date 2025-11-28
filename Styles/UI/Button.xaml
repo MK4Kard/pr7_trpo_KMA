@@ -4,7 +4,7 @@
         <Setter Property="Background" Value="{DynamicResource ButtonBackground}"/>
         <Setter Property="Foreground" Value="{DynamicResource ButtonForeground}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorder}"/>
-        <Setter Property="BorderThickness" Value="2"/>
+        <Setter Property="BorderThickness" Value="10"/>
         <Setter Property="FontWeight" Value="SemiBold"/>
         <Setter Property="Margin" Value="4"/>
         <Setter Property="VerticalAlignment" Value="Center"/>

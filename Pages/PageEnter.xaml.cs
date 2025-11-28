@@ -41,34 +41,26 @@ namespace pr7_trpo_1_KMA.Pages
         }
 
         private void ButtonEnter(object sender, RoutedEventArgs e)
-        {           
-            if (String.IsNullOrEmpty(current.Id.ToString()) || String.IsNullOrEmpty(current.Password))
+        {
+            string path = $"Doctors/D_{current.Id.ToString()}.json";
+
+            if (!File.Exists(path))
             {
-                MessageBox.Show("Заполните все поля", "Ошибка");
+                MessageBox.Show($"Пользователя с id {current.Id.ToString()} не существует");
                 return;
             }
-            else
+
+            string json = File.ReadAllText(path);
+
+            Doctor? restoredD = JsonSerializer.Deserialize<Doctor>(json);
+
+            if (current.Password != restoredD.Password)
             {
-                string path = $"Doctors/D_{current.Id.ToString()}.json";
-
-                if (!File.Exists(path))
-                {
-                    MessageBox.Show($"Пользователя с id {current.Id.ToString()} не существует");
-                    return;
-                }
-
-                string json = File.ReadAllText(path);
-
-                Doctor? restoredD = JsonSerializer.Deserialize<Doctor>(json);
-
-                if (current.Password != restoredD.Password)
-                {
-                    MessageBox.Show("Неверный пароль");
-                    return;
-                }
-
-                NavigationService.Navigate(new PageDoctor(restoredD));
+                MessageBox.Show("Неверный пароль");
+                return;
             }
+
+            NavigationService.Navigate(new PageDoctor(restoredD));
         }
 
         private void EnterReg(object sender, RoutedEventArgs e)

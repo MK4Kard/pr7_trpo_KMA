@@ -3,10 +3,16 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:pr7_trpo_1_KMA.Pages"
+      xmlns:local="clr-namespace:pr7_trpo_1_KMA.Pages" 
+      xmlns:converters="clr-namespace:pr7_trpo_1_KMA.Converters"
+      xmlns:validators="clr-namespace:pr7_trpo_1_KMA.ValidationRules"
       mc:Ignorable="d" 
       d:Width="800" d:Height="500"
       Title="Создание пациента">
+    <Page.Resources>
+        <converters:DiscountConverter x:Key="discountConverter"/>
+        <converters:InverseAndBooleansToBooleanConverter x:Key="boolConverter"/>
+    </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Style="{StaticResource RowTop}"/>
@@ -25,12 +31,101 @@
             <Label Content="Дата рождения"/>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="1">
-            <TextBox Text="{Binding NameP, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
-            <TextBox Text="{Binding LastNameP, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
-            <TextBox Text="{Binding PhoneNumber, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
-            <TextBox Text="{Binding MiddleNameP, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
-            <DatePicker SelectedDate="{Binding BirthDay, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox x:Name="name">
+                <TextBox.Text>
+                    <Binding Path="NameP" Mode="OneWayToSource" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <validators:InfoValidation ValidatesOnTargetUpdated="True"/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            <ItemsControl ItemsSource="{Binding ElementName=name, Path=(Validation.Errors)}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            <TextBox x:Name="last">
+                <TextBox.Text>
+                    <Binding Path="LastNameP" Mode="OneWayToSource" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <validators:InfoValidation/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            <ItemsControl ItemsSource="{Binding ElementName=last, Path=(Validation.Errors)}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            <TextBox x:Name="middle">
+                <TextBox.Text>
+                    <Binding Path="MiddleNameP" Mode="OneWayToSource" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <validators:InfoValidation/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            <ItemsControl ItemsSource="{Binding ElementName=middle, Path=(Validation.Errors)}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            <TextBox x:Name="phone">
+                <TextBox.Text>
+                    <Binding Path="PhoneNumber" Mode="OneWayToSource" UpdateSourceTrigger="PropertyChanged"
+                             Converter="{StaticResource discountConverter}">
+                        <Binding.ValidationRules>
+                            <validators:InfoValidation/>
+                            <validators:IsNumberPhoneRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            <ItemsControl ItemsSource="{Binding ElementName=phone, Path=(Validation.Errors)}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            <DatePicker x:Name="date">
+                <DatePicker.Text>
+                    <Binding Path="BirthDay" Mode="OneWayToSource" UpdateSourceTrigger="PropertyChanged"
+                            Converter="{StaticResource discountConverter}">
+                        <Binding.ValidationRules>
+                            <validators:InfoValidation/>
+                            <validators:IsDateRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </DatePicker.Text>
+            </DatePicker>
+            <ItemsControl ItemsSource="{Binding ElementName=date, Path=(Validation.Errors)}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
         </StackPanel>
-        <Button Grid.Row="1" Content="Зарегистрировать" Grid.ColumnSpan="2" Click="CreateClick" Style="{StaticResource BottomBtn}"/>
+        <Button Grid.Row="1" Content="Зарегистрировать" Grid.ColumnSpan="2" Click="CreateClick" Style="{StaticResource BottomBtn}">
+            <Button.IsEnabled>
+                <MultiBinding Converter="{StaticResource boolConverter}" Mode="TwoWay">
+                    <Binding ElementName="name" Path="(Validation.HasError)"/>
+                    <Binding ElementName="last" Path="(Validation.HasError)"/>
+                    <Binding ElementName="middle" Path="(Validation.HasError)"/>
+                    <Binding ElementName="phone" Path="(Validation.HasError)"/>
+                    <Binding ElementName="date" Path="(Validation.HasError)"/>
+                </MultiBinding>
+            </Button.IsEnabled>
+        </Button>
     </Grid>
 </Page>

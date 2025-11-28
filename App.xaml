@@ -16,6 +16,8 @@
                 <ResourceDictionary Source="/Styles/UI/DatePicker.xaml"/>
                 <ResourceDictionary Source="/Styles/UI/DockPanel.xaml"/>
                 <ResourceDictionary Source="/Styles/UI/MainWindow.xaml"/>
+                <ResourceDictionary Source="/Styles/UI/TextBlock.xaml"/>
+                <ResourceDictionary Source="/Styles/UI/ItemsControl.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

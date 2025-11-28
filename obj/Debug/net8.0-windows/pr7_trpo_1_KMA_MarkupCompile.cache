@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\DNS\OneDrive\Рабочий стол\Доделывать\pr7_trpo_1_KMA\App.xaml
-181878073651
+201350322481
 
-121431915372
+17191221514
 199-300291286
-MainWindow.xaml;Pages\PageAppointment.xaml;Pages\PageChange.xaml;Pages\PageCreatePacient.xaml;Pages\PageDoctor.xaml;Pages\PageEnter.xaml;Pages\Registration.xaml;Styles\Colors\DarkTheme.xaml;Styles\Colors\Default.xaml;Styles\UI\Button.xaml;Styles\UI\DatePicker.xaml;Styles\UI\DockPanel.xaml;Styles\UI\GridRow.xaml;Styles\UI\Label.xaml;Styles\UI\ListView.xaml;Styles\UI\MainWindow.xaml;Styles\UI\StackPanel.xaml;Styles\UI\TextBox.xaml;
+MainWindow.xaml;Pages\PageAppointment.xaml;Pages\PageChange.xaml;Pages\PageCreatePacient.xaml;Pages\PageDoctor.xaml;Pages\PageEnter.xaml;Pages\Registration.xaml;Styles\Colors\DarkTheme.xaml;Styles\Colors\Default.xaml;Styles\UI\Button.xaml;Styles\UI\DatePicker.xaml;Styles\UI\DockPanel.xaml;Styles\UI\GridRow.xaml;Styles\UI\ItemsControl.xaml;Styles\UI\Label.xaml;Styles\UI\ListView.xaml;Styles\UI\MainWindow.xaml;Styles\UI\StackPanel.xaml;Styles\UI\TextBlock.xaml;Styles\UI\TextBox.xaml;
 
 False
 

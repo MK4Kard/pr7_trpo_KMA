@@ -3,10 +3,15 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:pr7_trpo_1_KMA.Pages"
+      xmlns:local="clr-namespace:pr7_trpo_1_KMA.Pages" 
+      xmlns:converters="clr-namespace:pr7_trpo_1_KMA.Converters"
+      xmlns:validators="clr-namespace:pr7_trpo_1_KMA.ValidationRules"
       mc:Ignorable="d" 
       d:Width="800" d:Height="500"
       Title="Вход в приложение">
+    <Page.Resources>
+        <converters:InverseAndBooleansToBooleanConverter x:Key="boolConverter"/>
+    </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -14,11 +19,48 @@
             <RowDefinition Style="{StaticResource RowBottom}"/>
         </Grid.RowDefinitions>
         <Label Grid.Row="0" Content="Id"/>
-        <TextBox Text="{Binding Id}" Grid.Row="0" Style="{StaticResource BottomTextBox}"/>
+        <TextBox x:Name="id" Grid.Row="0" Style="{StaticResource BottomTextBox}">
+            <TextBox.Text>
+                <Binding Path="Id">
+                    <Binding.ValidationRules>
+                        <validators:InfoValidation ValidatesOnTargetUpdated="True"/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <ItemsControl Style="{StaticResource Bottom}" ItemsSource="{Binding ElementName=id, Path=(Validation.Errors)}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
         <Label Grid.Row="1" Content="Пароль"/>
-        <TextBox Text="{Binding Password}" Grid.Row="1" Style="{StaticResource BottomTextBox}"/>
+        <TextBox x:Name="pass" Grid.Row="1" Style="{StaticResource BottomTextBox}">
+            <TextBox.Text>
+                <Binding Path="Password">
+                    <Binding.ValidationRules>
+                        <validators:InfoValidation ValidatesOnTargetUpdated="True"/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <ItemsControl Style="{StaticResource Bottom}" Grid.Row="1" ItemsSource="{Binding ElementName=pass, Path=(Validation.Errors)}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
         <StackPanel Grid.Row="2" Style="{StaticResource BottomSP}">
-            <Button Click="ButtonEnter">Войти</Button>
+            <Button Click="ButtonEnter" Content="Войти">
+                <Button.IsEnabled>
+                    <MultiBinding Converter="{StaticResource boolConverter}" Mode="TwoWay">
+                        <Binding ElementName="id" Path="(Validation.HasError)"/>
+                        <Binding ElementName="pass" Path="(Validation.HasError)"/>
+                    </MultiBinding>
+                </Button.IsEnabled>
+            </Button>
             <Button Content="Регистрация" Click="EnterReg" Style="{StaticResource BottomBtn}"/>
         </StackPanel>
     </Grid>

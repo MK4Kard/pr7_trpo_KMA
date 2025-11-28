@@ -51,52 +51,45 @@ namespace pr7_trpo_1_KMA.Pages
 
         private void ButtonClick(object sender, RoutedEventArgs e)
         {
-            if (!(String.IsNullOrEmpty(currentD.Name) || String.IsNullOrEmpty(currentD.LastName) || String.IsNullOrEmpty(currentD.MiddleName) || String.IsNullOrEmpty(currentD.Specialisation) || String.IsNullOrEmpty(currentD.Password) || String.IsNullOrEmpty(rePass.Text)))
+            if (currentD.Password != rePass.Text)
             {
-                if (currentD.Password != rePass.Text)
-                {
-                    MessageBox.Show($"Пароли не совпадают");
-                    return;
-                }
-
-                int rndD = 0;
-
-                do
-                {
-                    rndD = rnd.Next(10000, 100000);
-                }
-                while (listId.Contains(rndD));
-
-                listId.Add(rndD);
-
-                string path = $"Doctors/D_{rndD}.json";
-                currentD.Id = rndD;
-
-                Doctor user = new Doctor
-                {
-                    Id = currentD.Id,
-                    Name = currentD.Name,
-                    LastName = currentD.LastName,
-                    MiddleName = currentD.MiddleName,
-                    Specialisation = currentD.Specialisation,
-                    Password = currentD.Password
-                };
-
-                var options = new JsonSerializerOptions
-                {
-                    WriteIndented = true
-                };
-
-                string json = JsonSerializer.Serialize<Doctor>(user, options);
-                File.WriteAllText(path, json);
-
-                MessageBox.Show($"Пользователь создан");
-                SaveId();
+                MessageBox.Show($"Пароли не совпадают");
+                return;
             }
-            else
+
+            int rndD = 0;
+
+            do
             {
-                MessageBox.Show("Заполните все поля", "Ошибка");
+                rndD = rnd.Next(10000, 100000);
             }
+            while (listId.Contains(rndD));
+
+            listId.Add(rndD);
+
+            string path = $"Doctors/D_{rndD}.json";
+            currentD.Id = rndD;
+
+            Doctor user = new Doctor
+            {
+                Id = currentD.Id,
+                Name = currentD.Name,
+                LastName = currentD.LastName,
+                MiddleName = currentD.MiddleName,
+                Specialisation = currentD.Specialisation,
+                Password = currentD.Password
+            };
+
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true
+            };
+
+            string json = JsonSerializer.Serialize<Doctor>(user, options);
+            File.WriteAllText(path, json);
+
+            MessageBox.Show($"Пользователь создан");
+            SaveId();
         }
 
         private void BackClick(object sender, RoutedEventArgs e)
