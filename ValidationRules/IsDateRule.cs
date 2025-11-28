@@ -19,6 +19,11 @@ namespace pr7_trpo_1_KMA.ValidationRules
                 return new ValidationResult(false, "Необходимо ввести дату");
             }
 
+            if (dateValue < new DateTime(1990, 01, 01) || dateValue > DateTime.Now)
+            {
+                return new ValidationResult(false, "Некоректная дата");
+            }
+
             return ValidationResult.ValidResult;
         }
     }

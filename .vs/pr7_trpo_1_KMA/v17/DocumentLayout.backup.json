@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\pages\\pageappointment.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:pages\\pageappointment.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\validationrules\\isdaterule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:validationrules\\isdaterule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\pages\\pageappointment.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:pages\\pageappointment.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\pages\\pageappointment.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:pages\\pageappointment.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\pages\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:pages\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\pages\\pageenter.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:pages\\pageenter.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\pages\\pageenter.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:pages\\pageenter.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\styles\\ui\\listview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -35,10 +55,6 @@
       "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:pages\\pagecreatepacient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\pages\\pageenter.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:pages\\pageenter.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\validationrules\\isnumberphonerule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:validationrules\\isnumberphonerule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -51,20 +67,12 @@
       "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:converters\\inverseandbooleanstobooleanconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\pages\\pageenter.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:pages\\pageenter.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\validationrules\\infovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:validationrules\\infovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\styles\\ui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:styles\\ui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6D771D4-48CC-4997-8251-BFB37A7C8439}|pr7_trpo_1_KMA.csproj|c:\\users\\dns\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_kma\\pages\\pagedoctor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -90,8 +98,69 @@
       "DocumentGroups": [
         {
           "DockedHeight": 308,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IsDateRule.cs",
+              "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\ValidationRules\\IsDateRule.cs",
+              "RelativeDocumentMoniker": "ValidationRules\\IsDateRule.cs",
+              "ToolTip": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\ValidationRules\\IsDateRule.cs*",
+              "RelativeToolTip": "ValidationRules\\IsDateRule.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T16:51:43.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T18:15:39.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PageEnter.xaml",
+              "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Pages\\PageEnter.xaml",
+              "RelativeDocumentMoniker": "Pages\\PageEnter.xaml",
+              "ToolTip": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Pages\\PageEnter.xaml",
+              "RelativeToolTip": "Pages\\PageEnter.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-17T05:11:17.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ListView.xaml",
+              "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Styles\\UI\\ListView.xaml",
+              "RelativeDocumentMoniker": "Styles\\UI\\ListView.xaml",
+              "ToolTip": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Styles\\UI\\ListView.xaml",
+              "RelativeToolTip": "Styles\\UI\\ListView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-18T17:46:17.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-18T18:15:55.153Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -106,33 +175,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "PageEnter.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Pages\\PageEnter.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\PageEnter.xaml.cs",
+              "ToolTip": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Pages\\PageEnter.xaml.cs",
+              "RelativeToolTip": "Pages\\PageEnter.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAD4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T06:15:33.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PageAppointment.xaml.cs",
               "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Pages\\PageAppointment.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\PageAppointment.xaml.cs",
-              "ToolTip": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Pages\\PageAppointment.xaml.cs*",
-              "RelativeToolTip": "Pages\\PageAppointment.xaml.cs*",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAAAKoAAAAoAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Pages\\PageAppointment.xaml.cs",
+              "RelativeToolTip": "Pages\\PageAppointment.xaml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAYwJcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T13:33:55.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAANYAAAAAAAAAAAAIwOgAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T18:15:39.989Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "PageCreatePacient.xaml",
               "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Pages\\PageCreatePacient.xaml",
               "RelativeDocumentMoniker": "Pages\\PageCreatePacient.xaml",
@@ -140,29 +209,6 @@
               "RelativeToolTip": "Pages\\PageCreatePacient.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-17T05:11:10.298Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PageEnter.xaml",
-              "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Pages\\PageEnter.xaml",
-              "RelativeDocumentMoniker": "Pages\\PageEnter.xaml",
-              "ToolTip": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Pages\\PageEnter.xaml",
-              "RelativeToolTip": "Pages\\PageEnter.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-17T05:11:17.158Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ListView.xaml",
-              "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Styles\\UI\\ListView.xaml",
-              "RelativeDocumentMoniker": "Styles\\UI\\ListView.xaml",
-              "ToolTip": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Styles\\UI\\ListView.xaml",
-              "RelativeToolTip": "Styles\\UI\\ListView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-18T17:46:17.09Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -179,7 +225,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-28T14:25:55.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "PageChange.xaml",
               "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Pages\\PageChange.xaml",
               "RelativeDocumentMoniker": "Pages\\PageChange.xaml",
@@ -190,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Registration.xaml",
               "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Pages\\Registration.xaml",
               "RelativeDocumentMoniker": "Pages\\Registration.xaml",
@@ -201,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "IsNumberPhoneRule.cs",
               "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\ValidationRules\\IsNumberPhoneRule.cs",
               "RelativeDocumentMoniker": "ValidationRules\\IsNumberPhoneRule.cs",
@@ -213,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "DiscountConverter.cs",
               "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Converters\\DiscountConverter.cs",
               "RelativeDocumentMoniker": "Converters\\DiscountConverter.cs",
@@ -225,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "InverseAndBooleansToBooleanConverter.cs",
               "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Converters\\InverseAndBooleansToBooleanConverter.cs",
               "RelativeDocumentMoniker": "Converters\\InverseAndBooleansToBooleanConverter.cs",
@@ -237,19 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PageEnter.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Pages\\PageEnter.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\PageEnter.xaml.cs",
-              "ToolTip": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Pages\\PageEnter.xaml.cs",
-              "RelativeToolTip": "Pages\\PageEnter.xaml.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowD4AAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T06:15:33.634Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "InfoValidation.cs",
               "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\ValidationRules\\InfoValidation.cs",
               "RelativeDocumentMoniker": "ValidationRules\\InfoValidation.cs",
@@ -261,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "DockPanel.xaml",
               "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Styles\\UI\\DockPanel.xaml",
               "RelativeDocumentMoniker": "Styles\\UI\\DockPanel.xaml",
@@ -273,18 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-18T18:15:55.153Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Default.xaml",
               "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Styles\\Colors\\Default.xaml",
               "RelativeDocumentMoniker": "Styles\\Colors\\Default.xaml",
@@ -296,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "DarkTheme.xaml",
               "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Styles\\Colors\\DarkTheme.xaml",
               "RelativeDocumentMoniker": "Styles\\Colors\\DarkTheme.xaml",
@@ -307,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Styles\\UI\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Styles\\UI\\MainWindow.xaml",
@@ -319,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "PageDoctor.xaml",
               "DocumentMoniker": "C:\\Users\\DNS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0414\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u0442\u044C\\pr7_trpo_1_KMA\\Pages\\PageDoctor.xaml",
               "RelativeDocumentMoniker": "Pages\\PageDoctor.xaml",
